@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/fImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="@string/food_img"
+        app:layout_constraintBottom_toTopOf="@+id/f_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/f_cuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fImg" />
+
+    <EditText
+        android:id="@+id/f_cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/cuisine"
+        app:layout_constraintBottom_toTopOf="@+id/f_date"
+        app:layout_constraintStart_toStartOf="@+id/f_name"
+        app:layout_constraintTop_toBottomOf="@+id/f_name" />
+
+    <EditText
+        android:id="@+id/f_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/f_rating"
+        app:layout_constraintEnd_toEndOf="@+id/f_cuisine"
+        app:layout_constraintTop_toBottomOf="@+id/f_cuisine" />
+
+    <RatingBar
+        android:id="@+id/f_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:rating="2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_date"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

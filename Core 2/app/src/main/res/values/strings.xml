@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Picture This</string>
+    <string name="_1">1</string>
+    <string name="cake">Cake</string>
+    <string name="_0">0</string>
+    <string name="muffin">muffin</string>
+    <string name="choco_cake">choco_cake</string>
+    <string name="muffins">muffins</string>
+    <string name="croissants">croissants</string>
+    <string name="pie">_pie</string>
+    <string name="croissant">Croissant</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="pies">Pies</string>
+    <string name="cuisine">cuisine</string>
+    <string name="name">name</string>
+    <string name="date">date</string>
+    <string name="food_img">food_img</string>
+    <string name="name_looks_good">Name Looks Good</string>
+    <string name="cuisine_looks_good">Cuisine Looks Good</string>
+    <string name="date_looks_good">Date Looks Good</string>
+
+
+</resources>
